@@ -1,0 +1,165 @@
+/* Default */
+*,
+*::after,
+*::before {
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+.main {
+min-width: 350px;
+}
+.main .home {
+height:100vh;
+width:100%;
+background:url("../images/home-bg.jpg")no-repeat center center/cover;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding: 0 1rem;
+}
+.main .home h1,p {
+margin-bottom: 42px;
+color: #fff;
+}
+.main .home h1 {
+font-size: 2rem;
+animation: changeColor 3s ease-in-out infinite alternate;
+}
+@keyframes changeColor {
+0% {}
+10% {color:teal;}
+20%{color:tomato;}
+30%{color:red;}
+40%{color:blue;}
+50%{color:aqua;}
+60%{color:lime;}
+70%{color:fuchsia;}
+80%{color:navy;}
+90%{color:purple;}
+100%{color:yellow;}
+}
+.main .home h1 span {
+font-size: 6rem;
+}
+.main .home a {
+padding: 1rem 5rem;
+background:transparent;
+border-radius: 1rem 0 1rem 0;
+border: 1.5px solid lightblue;
+color: #fff;
+font-size: 1.5rem;
+transition: 1s ease-in-out;
+text-decoration:none;
+}
+.main .home a:hover{
+background:lightblue;
+}
+
+
+
+
+
+.main .subscribe{
+height:6rem;
+width:100%;
+background:lightblue;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding: 1rem;
+}
+.main .subscribe h1 {
+color:#fff;
+}
+.main .subscribe .inputButton input {
+padding: .6rem 1.4rem;
+}
+.main .subscribe .inputButton button {
+padding: .6rem .3rem;
+color: #fff;
+background: lightblue;
+}
+
+
+
+
+.main .about{
+height:100%;
+width:100%;
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+padding: 0 1rem;
+}
+.main .about h1{
+margin-bottom: 20px;
+}
+.main .about p{
+background:#e6e6e6;
+padding: 1rem;
+color:#000;
+}
+
+
+
+
+.main .footer{
+height: 4rem;
+width:100%;
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+background: lightblue;
+}
+.main .footer h4 {
+color: #000;
+}
+
+
+
+
+.main .used {
+display: flex;
+align-items:center;
+justify-content:space-around;
+height:100%;
+width: 100%;
+padding: 0 1rem;
+}
+.main .used .html p,
+.main .used .css p{
+color:#000;
+}
+.main .used .html h3,
+.main .used .css h3{
+margin:1rem 0;
+}
+
+
+
+
+
+@media (max-width: 578px){
+.main .subscribe{
+height:100%;
+width:100%;
+background:lightblue;
+display:flex;
+justify-content: center;
+align-items:center;
+flex-direction:column;
+padding: 1rem;
+}
+
+
+
+.main .used {
+display: flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}

@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body{
+transition:.7s ease;
+}
+
+#dark-mode {
+border: 2px solid lightblue;
+padding: 4px;
+cursor:pointer;
+outline:none;
+background:transparent;
+}
+.memes-container{
+padding: 1rem;
+display:flex;
+flex-wrap: wrap;
+height:100%;
+width:100%;
+}
+
+.memes-container img {
+height:100%;
+width:100%;
+max-height: 650px;
+max-width:450px;
+padding:1rem;
+animation: borderColor 10s ease infinite alternate;
+}
+@keyframes borderColor {
+0% {}
+10% {border:1.5px solid teal;}
+20%{border:1.5px solid tomato;}
+30%{border:1.5px solid red;}
+40%{border:1.5px solid blue;}
+50%{border:1.5px solid aqua;}
+60%{border:1.5px solid lime;}
+70%{border:1.5px solid fuchsia;}
+80%{border:1.5px solid navy;}
+90%{border:1.5px solid purple;}
+100%{border:1.5px solid yellow;}
+}
